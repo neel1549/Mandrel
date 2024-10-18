@@ -3,3 +3,8 @@ This project involves building a web application that syncs users from a Slack w
 
 Run the following command at the root
 ` docker-compose up --build -d `
+
+
+UI: https://mandrel-test-fe-36e2795e77fa.herokuapp.com/
+
+BE: https://mandrel-test-f0944079ae57.herokuapp.com/
