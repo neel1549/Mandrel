@@ -11,5 +11,5 @@ COPY . .
 
 EXPOSE 5000
 
-# Start the Flask app using Gunicorn, binding to the Heroku-provided $PORT
-CMD ["sh", "-c", "gunicorn --bind 0.0.0.0:$PORT app:app"]
+# Start Flask app with Gunicorn
+CMD ["sh", "-c", "gunicorn app:asgi_app --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:${PORT} --workers 4"]
