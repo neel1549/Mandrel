@@ -8,3 +8,5 @@ Run the following command at the root
 UI: https://mandrel-test-fe-36e2795e77fa.herokuapp.com/
 
 BE: https://mandrel-test-f0944079ae57.herokuapp.com/
+
+Slack Workspace Join URL: https://join.slack.com/t/mandreltest/shared_invite/zt-2sjphc19y-mFjuNLtV5rIichI8GtnvCQ
