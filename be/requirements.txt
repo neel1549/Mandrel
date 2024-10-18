@@ -2,7 +2,4 @@ flask
 flask_socketio 
 flask_cors 
 python-dotenv
-pymongo 
-uvicorn
-gunicorn
-asgiref
+pymongo

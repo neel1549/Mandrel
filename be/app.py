@@ -3,12 +3,11 @@ from flask_socketio import SocketIO, emit
 from flask_cors import CORS
 from dotenv import load_dotenv
 from pymongo import MongoClient
-from asgiref.wsgi import WsgiToAsgi
 import os
 
 
 app = Flask(__name__)
-asgi_app = WsgiToAsgi(app)
+
 
 # Load environment variables from .env file
 load_dotenv()
