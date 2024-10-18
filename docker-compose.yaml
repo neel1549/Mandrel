@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./be
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./be/.env
+    networks:
+      - app-network
+
+  frontend:
+    build:
+      context: ./fe
+    ports:
+      - "5173:5173"
+    environment:
+      - REACT_APP_API_URL=http://backend:5000
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
