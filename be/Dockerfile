@@ -11,5 +11,5 @@ COPY . .
 
 EXPOSE 5000
 
-# Start Flask app with Gunicorn
-CMD ["sh", "-c", "gunicorn app:asgi_app --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:${PORT} --workers 4"]
+# Use Uvicorn to run the app, which supports WebSockets
+CMD ["python", "app.py"]
